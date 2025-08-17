@@ -251,7 +251,7 @@ def main():
     parser = argparse.ArgumentParser(description='Import Neo4j data and visualize as knowledge graph')
     parser.add_argument('--uri', type=str, default='bolt://localhost:7687', help='Neo4j database URI')
     parser.add_argument('--username', type=str, default='neo4j', help='Neo4j username')
-    parser.add_argument('--password', type=str, required=True, help='Neo4j password')
+    parser.add_argument('--password', type=str, default='Zgm123456', help='Neo4j password')
     parser.add_argument('--query', type=str, help='Custom Cypher query to fetch triples')
     parser.add_argument('--output', type=str, default='d:\\git\\ai-knowledge-graph\\docs\\neo4j_knowledge_graph.html', help='Output HTML file path')
     parser.add_argument('--config', type=str, default='config.toml', help='Path to configuration file')
